@@ -65,11 +65,13 @@
       
       <div class="grid-x grid-padding-x">
         <div class="large-12 cell" id="switch_rules">
+          <h5 class="subhead">Title</h5>
+          <textarea name="switch-title" rows="1" cols="30">Name your Switch</textarea>
           <h5 class="subhead">Target</h5>
 
 <!-- switch  -->
-  <div class="form" id="switch1">
-  <select name="switches">
+<div class="form" id="switch1">
+  <select id="switches">
     <option selected disabled>Switch</option>
     <option value="account" id="switch">Account
       <option value="activation is" id="rule">is</option>
@@ -84,26 +86,26 @@
       <option value="geo is not" id="rule">is not</option>
     </option>
     <option value="purchases" id="switch">Purchases
-      <option value="purchases include"  id="rule">includes</option>
+      <option value="purchases include"  id="rule">include</option>
       <option value="purchases do not include" id="rule">do not include</option>
     </option>
     <option value="search" id="switch">Search
-      <option value="purchases include" id="rule">includes</option>
+      <option value="purchases include" id="rule">include</option>
       <option value="purchases do not include" id="rule">do not include</option>
     </option>    
   </select>
 
 <!-- operators */ -->
-  <select name="operators">
+  <select id="operators">
     <option selected disabled>rule</option>
     <option value="is" id="operators">is</option>
-    <option value="includes" id="operators">includes</option>
+    <option value="include" id="operators">include</option>
     <option value="is not" id="operators">is not</option>
-    <option value="does not include" id="operators">does not includes</option>
+    <option value="does not include" id="operators">does not include</option>
   </select>
 
 <!-- geo */ -->
-  <select name="geo">
+  <select id="geo">
     <option selected disabled>Serve</option>
     <option value="Ukraine" id="geo-specific">Ukraine</option>
     <option value="unitedArabEmirates" id="geo-specific">United Arab Emirates</option>
@@ -117,7 +119,7 @@
 
 <!-- switch 2 -->
 <div class="form" id="switch2">
-  <select name="switches">
+  <select id="switches">
     <option selected disabled>Switch</option>
     <option value="account" id="switch">Account
       <option value="activation is" id="rule">is</option>
@@ -132,27 +134,27 @@
       <option value="geo is not" id="rule">is not</option>
     </option>
     <option value="purchases" id="switch">Purchases
-      <option value="purchases include"  id="rule">includes</option>
+      <option value="purchases include"  id="rule">include</option>
       <option value="purchases do not include" id="rule">do not include</option>
     </option>
     <option value="search" id="switch">Search
-      <option value="purchases include" id="rule">includes</option>
+      <option value="purchases include" id="rule">include</option>
       <option value="purchases do not include" id="rule">do not include</option>
     </option>    
   </select>
 
 <!-- operators */ -->
-  <select name="operators">
+  <select id="operators">
     <option selected disabled>operator</option>
     <option value="is" id="operators">is</option>
-    <option value="includes" id="operators">includes</option>
+    <option value="include" id="operators">include</option>
     <option value="is not" id="operators">is not</option>
-    <option value="does not include" id="operators">does not includes</option>
+    <option value="does not include" id="operators">does not include</option>
   </select>
 
 
 <!-- purchases */ -->
-  <select name="purchase">
+  <select id="purchase">
     <option class="input" selected disabled >Serve</option>
     <option value="Premium-images" id="geo-specific">Premium Images</option>
     <option value="Photos" id="purchase-specific">Photos</option>
@@ -160,40 +162,92 @@
     <option value="Video" id="purchase-specific">Video</option>
     <option value="Vectors" id="purchase-specific">Vectors</option>
   </select>
+<button class="add2">Add</button> <button class="cancel">Cancel</button>
+</div>
+
+<!-- switch 3 -->
+<div class="form" id="switch3">
+  <select id="switches">
+    <option selected disabled>Switch</option>
+    <option value="account" id="switch">Account
+      <option value="activation is" id="rule">is</option>
+      <option value="activation is not" id="rule">is not</option>
+    </option>
+    <option value="activation" id="switch">Activation
+      <option value="activation is" id="rule">is</option>
+      <option value="activation is not" id="rule">is not</option>
+    </option>
+    <option value="geo" id="switch">Geo
+      <option value="geo is" id="rule">is</option>
+      <option value="geo is not" id="rule">is not</option>
+    </option>
+    <option value="purchases" id="switch">Purchases
+      <option value="purchases include"  id="rule">include</option>
+      <option value="purchases do not include" id="rule">do not include</option>
+    </option>
+    <option value="search" id="switch">Search
+      <option value="purchases include" id="rule">include</option>
+      <option value="purchases do not include" id="rule">do not include</option>
+    </option>    
+  </select>
+
+<!-- operators */ -->
+  <select id="operators">
+    <option selected disabled>operator</option>
+    <option value="is" id="operators">is</option>
+    <option value="include" id="operators">include</option>
+    <option value="is not" id="operators">is not</option>
+    <option value="does not include" id="operators">does not include</option>
+  </select>
+
+
+<!-- purchases */ -->
+  <select id="purchase">
+    <option class="input" selected disabled >Serve</option>
+    <option value="Premium-images" id="geo-specific">Premium Images</option>
+    <option value="Photos" id="purchase-specific">Photos</option>
+    <option value="Templates" id="purchase-specific">Templates</option>
+    <option value="Video" id="purchase-specific">Video</option>
+    <option value="Vectors" id="purchase-specific">Vectors</option>
+  </select>
+<button class="add3">Add</button> <button class="cancel2">Cancel</button>
 </div>
 
 <!-- display -->
 
 <!-- layout -->
-<h5 class="subhead">Display</h5>
-  <div class="form" id="display">
-  <select name="layout">
-    <option class="input" selected disabled>Layout</option>
-    <option value="Premium-images" id="geo-specific">Premium Images</option>
-    <option value="Photos" id="purchase-specific">Photos</option>
-    <option value="Templates" id="purchase-specific">Templates</option>
-    <option value="Video" id="purchase-specific">Video</option>
-    <option value="Vectors" id="purchase-specific">Vectors</option>
+<h5 class="subhead" id="display">Display</h5>
+  <div class="form" id="layout">
+  <select id="layout">
+    <option class="input" selected disabled>Page layout</option>
+    <option value="other" id="homepage">Homepage</option>
+    <option value="other" id="premium-page">Premium LP</option>
+    <option value="other" id="template-page">Templates LP</option>
+    <option value="video-lp" id="video-page">Video LP</option>
   </select>
-</div>
+  </div>
 
 <!-- elements */ -->
-  <select name="purchase">
-    <option class="input" selected disabled >Serve</option>
-    <option value="Premium-images" id="geo-specific">Premium Images</option>
-    <option value="Photos" id="purchase-specific">Photos</option>
-    <option value="Templates" id="purchase-specific">Templates</option>
-    <option value="Video" id="purchase-specific">Video</option>
-    <option value="Vectors" id="purchase-specific">Vectors</option>
+  <div class="form" id="elements">
+  <select id="elements">
+    <option class="elements" selected disabled>Elements</option>
+    <option value="header-image" id="element">Header Image</option>
+    <option value="header-test" id="element">Header Text</option>
+    <option value="banner" id="element">Blue Banner</option>
+    <option value="seo-blade" id="element">SEO Blade</option>
   </select>
+  </div>
 
-  <button type="submit" value="select" class="select">
+  <button class="choose">Choose</button>
 
   <input type="Submit" value="Save" class="save">
 
         </div>
       </div>
+    <img src="files/images/upload.png" id="upload">
     </div>
+ 
+
   </div>
 
 
@@ -212,6 +266,7 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="js/app.js"></script>
 
   </body>

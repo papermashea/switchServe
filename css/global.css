@@ -57,7 +57,7 @@ ul#menu-child a {
 
 /* mainpage content */
 
-h1, h2, h3, h4, h5, a, p {
+h1, h2, h3, h4, h5, a, p, textarea {
 	font-family: 'AdobeClean-Regular', 'Ubuntu', helvetica, sans-serif;
 }
 
@@ -65,49 +65,14 @@ h1, h2, h3, h4, h5, a, p {
 	padding: 40px 0px 0px 70px;
 }
 
-img.app {
-	width: 50px;
-	max-height: auto;
-	margin: 0px 20px 0px 0px;
-	display: box;
+textarea {
+	color: #393939;
+	font-style: italic;
+	margin-bottom: 40px;
 }
 
-img.icon {
-	margin: 0px 0px 20px 0px;
-	max-height: auto;
-}
-
-img#info {
-	height: 20px;
-	width: auto;
-	float: right;
-}
-
-#callout-subhead {
-	color: #000000;
-	font-family: 'AdobeClean-Bold', 'Ubuntu', helvetica, sans-serif;
-}	
-
-#section {
-	margin: 0 0 3% 0;
-}
-
-#details {
-	margin: 1% 0;
-	padding: 0px 70px;
-}
-
-.callout {
-	align-content: center;
-	border: 2px solid #707070;
-    border-radius: 4px;
-    margin: 20px 0;
-    padding: 10px 20px;
-    color: #707070;
-    font-size: 14px;
-    font-weight: 400;
-	width: 75%;
-	font-family: 'AdobeClean-Bold';	
+h5 .subhead#display {
+	margin-top: 40px;
 }
 
 .category {
@@ -132,13 +97,24 @@ button.new {
 }
 
 button.add,
-button.cancel {
+button.add2,
+button.add3,
+button.cancel,
+button.cancel2 {
 	padding: 10px;
 	background-color: #efefef;
 	text-decoration: none;
 	color: black!important;
-	margin: 20px; 
+	margin: 20px 20px 0 20px; 
 	border: 0;
+}
+
+button.choose {
+	padding: 10px;
+	background-color: #efefef;
+	text-decoration: none;
+	color: black!important;
+	margin: 0 20px; 
 }
 
 input.save {
@@ -166,6 +142,7 @@ button.select {
 }
 
 #switch2,
+#switch3,
 .cancel {
 	display: none;
 }
@@ -187,8 +164,17 @@ h6.subhead {
 	clear: both;
 }
 
-#switch2 {
+#switch3 {
 	padding-bottom: 60px;
+}
+
+/*#elements {
+	clear: right;
+	display: none;
+}
+
+#elements.show {
+	display: block;
 }
 
 
@@ -199,6 +185,11 @@ h6.subhead {
 
 a#switch:hover {
 	display: block;
+}
+
+img#upload {
+	display: none;
+	margin-left: 340px;
 }
 
 /* footer */
