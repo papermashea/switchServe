@@ -117,6 +117,30 @@ img#info {
 	padding: 2%;
 }
 
+/* button */
+button {
+	padding: 20px;
+	background-color: #efefef;
+	text-decoration: none;
+	color: black!important;
+	margin-bottom: 20px; 
+}
+
+
+#switch-form {
+	display: none;
+}
+
+/* nested dropdowns */
+#rule {
+	display: none;
+}
+
+a#switch:hover {
+	display: block;
+}
+
+
 /* footer */
 
 footer {

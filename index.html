@@ -52,21 +52,31 @@
                 <div class="dashboard">
                 <img src="files/images/SwitchServeDash.png" alt="dashboard" class="" id="">
                </div>
-
+          <button><a href="#">New Switch +</a></button>
         </div>
       </div>
 
 <!-- end dashboard -->
+
+
 <!-- new switch -->
 
-    <div class="grid-container">
+    <div class="grid-container" id="switch-form">
       
       <div class="grid-x grid-padding-x">
         <div class="large-12 cell" id="switch_rules">
-          <button><a href="#">New Switch</a></button>
           <h6>Target</h6>
 
+<!-- switch  -->
   <select name="switches">
+    <option value="account" id="switch">Account
+      <option value="activation is" id="rule">is</option>
+      <option value="activation is not" id="rule">is not</option>
+    </option>
+    <option value="activation" id="switch">Activation
+      <option value="activation is" id="rule">is</option>
+      <option value="activation is not" id="rule">is not</option>
+    </option>
     <option value="geo" id="switch">Geo
       <option value="geo is" id="rule">is</option>
       <option value="geo is not" id="rule">is not</option>
@@ -75,21 +85,33 @@
       <option value="purchases include"  id="rule">includes</option>
       <option value="purchases do not include" id="rule">do not include</option>
     </option>
-    <option value="activation" id="switch">Activation
-      <option value="activation is" id="rule">is</option>
-      <option value="activation is not" id="rule">is not</option>
-    </option>
     <option value="search" id="switch">Search
       <option value="purchases include" id="rule">includes</option>
-      <option value="purchases do not include" id="rule">do not include
+      <option value="purchases do not include" id="rule">do not include</option>
     </option>    
-    <option value="account" id="switch">Account
-      <option value="activation is" id="rule">is</option>
-      <option value="activation is not" id="rule">is not</option>
-    </option>
-</option>
   </select>
 
+
+<!-- operators */ -->
+  <select name="operators">
+    <option value="is" id="operators">is</option>
+    <option value="includes" id="operators">includes</option>
+    <option value="is not" id="operators">is not</option>
+    <option value="does not include" id="operators">does not includes</option>
+  </select>
+
+
+<!-- geo */ -->
+  <select name="geo">
+    <option value="Ukraine" id="geo-specific">Ukraine</option>
+    <option value="unitedArabEmirates" id="geo-specific">United Arab Emirates</option>
+    <option value="unitedKingdom" id="geo-specific">United Kingdown</option>
+    <option value="unitedStates" id="geo-specific">United States</option>
+    <option value="Uruguay" id="geo-specific">Uruguay</option>
+    <option value="Uzbekistan" id="geo-specific">Uzbekistan</option>
+  </select>
+
+  <input type="submit">
 
         </div>
 
