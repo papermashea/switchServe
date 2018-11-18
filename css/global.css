@@ -54,6 +54,7 @@ ul#menu-child a {
 	margin: 0 40px;
 }
 
+
 /* mainpage content */
 
 h1, h2, h3, h4, h5, a, p {
@@ -117,8 +118,12 @@ img#info {
 	padding: 2%;
 }
 
-/* button */
-button {
+.grid-container {
+	margin-bottom: 100px;
+}
+
+/* buttons */
+button.new {
 	padding: 20px;
 	background-color: #efefef;
 	text-decoration: none;
@@ -126,10 +131,65 @@ button {
 	margin-bottom: 20px; 
 }
 
+button.add,
+button.cancel {
+	padding: 10px;
+	background-color: #efefef;
+	text-decoration: none;
+	color: black!important;
+	margin: 20px; 
+	border: 0;
+}
+
+input.save {
+	padding: 10px;
+	background-color: #33AB84;
+	text-decoration: none;
+	color: white;
+	margin: 0 20px; 
+	border: 0;
+}
+
+
+button.select {
+	color: #333333;
+	border: #333333 2px;
+	border-radius: 4px;
+}
+
+.form {
+	margin: 20px 0;
+}
 #switch-form {
+	display: none;
+	margin: 40px;
+}
+
+#switch2,
+.cancel {
 	display: none;
 }
 
+option.input {
+	color: #efefef;
+}
+
+
+/* form styles */
+
+select {
+	width: 30%;
+	float: left;
+	margin: 0 10px;
+}
+
+h6.subhead {
+	clear: both;
+}
+
+#switch2 {
+	padding-bottom: 60px;
+}
 
 
 /* nested dropdowns */
@@ -140,7 +200,6 @@ button {
 a#switch:hover {
 	display: block;
 }
-
 
 /* footer */
 

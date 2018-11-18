@@ -52,7 +52,7 @@
                 <div class="dashboard">
                 <img src="files/images/SwitchServeDash.png" alt="dashboard" class="" id="">
                </div>
-          <button>New Switch +</button>
+          <button class="new">New Switch +</button>
         </div>
       </div>
 
@@ -65,10 +65,12 @@
       
       <div class="grid-x grid-padding-x">
         <div class="large-12 cell" id="switch_rules">
-          <h6>Target</h6>
+          <h5 class="subhead">Target</h5>
 
 <!-- switch  -->
+  <div class="form" id="switch1">
   <select name="switches">
+    <option selected disabled>Switch</option>
     <option value="account" id="switch">Account
       <option value="activation is" id="rule">is</option>
       <option value="activation is not" id="rule">is not</option>
@@ -91,18 +93,18 @@
     </option>    
   </select>
 
-
 <!-- operators */ -->
   <select name="operators">
+    <option selected disabled>rule</option>
     <option value="is" id="operators">is</option>
     <option value="includes" id="operators">includes</option>
     <option value="is not" id="operators">is not</option>
     <option value="does not include" id="operators">does not includes</option>
   </select>
 
-
 <!-- geo */ -->
   <select name="geo">
+    <option selected disabled>Serve</option>
     <option value="Ukraine" id="geo-specific">Ukraine</option>
     <option value="unitedArabEmirates" id="geo-specific">United Arab Emirates</option>
     <option value="unitedKingdom" id="geo-specific">United Kingdown</option>
@@ -110,13 +112,89 @@
     <option value="Uruguay" id="geo-specific">Uruguay</option>
     <option value="Uzbekistan" id="geo-specific">Uzbekistan</option>
   </select>
+<button class="add">Add</button> <button class="cancel">Cancel</button>
+</div>
 
-  <input type="submit">
+<!-- switch 2 -->
+<div class="form" id="switch2">
+  <select name="switches">
+    <option selected disabled>Switch</option>
+    <option value="account" id="switch">Account
+      <option value="activation is" id="rule">is</option>
+      <option value="activation is not" id="rule">is not</option>
+    </option>
+    <option value="activation" id="switch">Activation
+      <option value="activation is" id="rule">is</option>
+      <option value="activation is not" id="rule">is not</option>
+    </option>
+    <option value="geo" id="switch">Geo
+      <option value="geo is" id="rule">is</option>
+      <option value="geo is not" id="rule">is not</option>
+    </option>
+    <option value="purchases" id="switch">Purchases
+      <option value="purchases include"  id="rule">includes</option>
+      <option value="purchases do not include" id="rule">do not include</option>
+    </option>
+    <option value="search" id="switch">Search
+      <option value="purchases include" id="rule">includes</option>
+      <option value="purchases do not include" id="rule">do not include</option>
+    </option>    
+  </select>
 
-        </div>
+<!-- operators */ -->
+  <select name="operators">
+    <option selected disabled>operator</option>
+    <option value="is" id="operators">is</option>
+    <option value="includes" id="operators">includes</option>
+    <option value="is not" id="operators">is not</option>
+    <option value="does not include" id="operators">does not includes</option>
+  </select>
+
+
+<!-- purchases */ -->
+  <select name="purchase">
+    <option class="input" selected disabled >Serve</option>
+    <option value="Premium-images" id="geo-specific">Premium Images</option>
+    <option value="Photos" id="purchase-specific">Photos</option>
+    <option value="Templates" id="purchase-specific">Templates</option>
+    <option value="Video" id="purchase-specific">Video</option>
+    <option value="Vectors" id="purchase-specific">Vectors</option>
+  </select>
+</div>
+
+<!-- display -->
+
+<!-- layout -->
+<h5 class="subhead">Display</h5>
+  <div class="form" id="display">
+  <select name="layout">
+    <option class="input" selected disabled>Layout</option>
+    <option value="Premium-images" id="geo-specific">Premium Images</option>
+    <option value="Photos" id="purchase-specific">Photos</option>
+    <option value="Templates" id="purchase-specific">Templates</option>
+    <option value="Video" id="purchase-specific">Video</option>
+    <option value="Vectors" id="purchase-specific">Vectors</option>
+  </select>
+</div>
+
+<!-- elements */ -->
+  <select name="purchase">
+    <option class="input" selected disabled >Serve</option>
+    <option value="Premium-images" id="geo-specific">Premium Images</option>
+    <option value="Photos" id="purchase-specific">Photos</option>
+    <option value="Templates" id="purchase-specific">Templates</option>
+    <option value="Video" id="purchase-specific">Video</option>
+    <option value="Vectors" id="purchase-specific">Vectors</option>
+  </select>
+
+  <button type="submit" value="select" class="select">
+
+  <input type="Submit" value="Save" class="save">
 
         </div>
       </div>
+    </div>
+  </div>
 
 
 <!-- end section -->
