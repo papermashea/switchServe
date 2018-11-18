@@ -1,0 +1,143 @@
+/* fonts */
+
+@font-face {
+    font-family: 'AdobeClean-Regular';
+	src: url('/fonts/AdobeClean-OpenType/AdobeClean-Regular.otf'); /* IE9 Compat Modes */
+  	src: url('/fonts/AdobeClean-OpenType/AdobeClean-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AdobeClean-Regular.woff2') format('woff'), /* Modern Browsers */
+       url('AdobeClean-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('AdobeClean-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'AdobeClean-Bold';
+	src: url('/fonts/AdobeClean-OpenType/AdobeClean-Bold.otf'); /* IE9 Compat Modes */
+  	src: url('/fonts/AdobeClean-OpenType/AdobeClean-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AdobeClean-Bold.woff2') format('woff'), /* Modern Browsers */
+       url('AdobeClean-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('AdobeClean-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+/* title bar styling */
+
+img.logo {
+	width: 80px;
+	height: auto;
+	padding: 10px 20px;
+}
+
+.data-sticky-container a {
+	color: white;
+	padding: 10px;
+}
+
+ul.dropdown {
+	float: right;
+	padding: 0;	
+	z-index: 3;
+}
+
+ul#menu-child a {
+	color: black;
+	padding: 10px;
+}
+
+.menu li {
+	padding: 10px;
+}
+
+.title-bar-right,
+.title-bar-left {
+	margin: 0 40px;
+}
+
+/* mainpage content */
+
+h1, h2, h3, h4, h5, a, p {
+	font-family: 'AdobeClean-Regular', 'Ubuntu', helvetica, sans-serif;
+}
+
+#header-text {
+	padding: 40px 0px 0px 70px;
+}
+
+img.app {
+	width: 50px;
+	max-height: auto;
+	margin: 0px 20px 0px 0px;
+	display: box;
+}
+
+img.icon {
+	margin: 0px 0px 20px 0px;
+	max-height: auto;
+}
+
+img#info {
+	height: 20px;
+	width: auto;
+	float: right;
+}
+
+#callout-subhead {
+	color: #000000;
+	font-family: 'AdobeClean-Bold', 'Ubuntu', helvetica, sans-serif;
+}	
+
+#section {
+	margin: 0 0 3% 0;
+}
+
+#details {
+	margin: 1% 0;
+	padding: 0px 70px;
+}
+
+.callout {
+	align-content: center;
+	border: 2px solid #707070;
+    border-radius: 4px;
+    margin: 20px 0;
+    padding: 10px 20px;
+    color: #707070;
+    font-size: 14px;
+    font-weight: 400;
+	width: 75%;
+	font-family: 'AdobeClean-Bold';	
+}
+
+.category {
+	margin: 50px 0px;
+}
+
+.medium-4 {
+	padding: 2%;
+}
+
+/* footer */
+
+footer {
+	background-color: #f5f5f5;
+	padding: 20px 80px;
+	color: black;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+}
+
+footer a {
+	color: #1473e6;
+}
+
+footer h5 {
+	float: left;
+}
+
+footer p {
+	text-align: left;
+	float: right;
+}
